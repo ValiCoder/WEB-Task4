@@ -1,0 +1,22 @@
+
+.grid-box {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.grid-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+body {
+    padding-bottom: 50px;
+}

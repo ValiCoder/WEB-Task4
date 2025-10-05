@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    border: 1px dashed #6a11cb;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.part {
+    margin-bottom: 40px;
+}
+
+.task-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.task-box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.task-button {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.task-button:hover {
+    background: #0056b3;
+}
+
+.demo {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.boxes {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.box {
+    background: #e9ecef;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    color: white;
+    
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    .task-box {
+        flex: 0 0 calc(50% - 20px);
+    }
+    
+    .boxes {
+        flex-wrap: wrap;
+    }
+    
+    .box {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    .task-menu {
+        flex-direction: column;
+    }
+    
+    .task-box {
+        flex: 0 0 100%;
+    }
+    
+    .boxes {
+        flex-direction: column;
+    }
+    
+    .box {
+        flex: 0 0 100%;
+    }
+}
